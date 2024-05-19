@@ -4,7 +4,7 @@ X, O, BLANCO = 'X', 'O', ' '
 
 def main():
     print('Bienvenido a 4 en raya!')
-    tableroJuego = obtenerTableroVacio()  # Crea el tablero vacío de 3 en raya
+    tableroJuego = obtenerTableroVacio()  # Crea el tablero vacío de 4 en raya
     jugadorActual, jugadorSiguiente = X, O  # X primero, O siguiente
 
     while True:  # Bucle principal del juego
@@ -78,7 +78,7 @@ def esGanador(tablero, jugador):
     """Devuelve True si el jugador es ganador."""
     # Se utilizan variables cortas para mejorar la legibilidad
     b, p = tablero, jugador
-    # Busca el 3 en raya en las 3 filas, 3 columnas y las 2 diagonales
+    # Busca el 4 en raya en las 4 filas, 4 columnas y las 2 diagonales
     return ((b['1'] == b['2'] == b['3'] == b['4'] == p) or  # Horizontal arriba
             (b['5'] == b['6'] == b['7'] == b['8'] == p) or  # Horizontal medio iz
             (b['9'] == b['10'] == b['11'] == b['12'] == p) or  # Horizontal medio dr
